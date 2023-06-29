@@ -81,11 +81,11 @@ h2 {
     padding: 10px;
     margin-right: 10px;
     height: 520px;
-    background-image: url(camera.jpg);
+    background-image: url(images/camera.jpg);
     background-repeat: no-repeat;
 }
 
-#privacy, #privacy h2 {
+#privacy, #privacy h2, #security, #security h2 {
     background-color: #132D46;
     color: #FFFFFF;
     text-align: center;
@@ -97,14 +97,8 @@ h2 {
     padding: 10px;
     margin-left: 10px;
     height: 520px;
-    background-image: url(safe.jpg);
+    background-image: url(images/safe.jpg);
     background-repeat: no-repeat;
-}
-
-#security, #security h2 {
-    background-color: #DEDEDE;
-    color: #132D46;
-    text-align: center;
 }
 
 #security p {
