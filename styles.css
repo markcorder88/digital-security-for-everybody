@@ -1,0 +1,148 @@
+* { 
+    box-sizing: border-box; 
+}
+
+body { 
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #696E79; 
+    color: #191E29; 
+}
+
+#wrapper { 
+    margin: 0 auto;
+    min-width: 1120px; max-width: 1200px; 
+    width: 90%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+header {
+    color: #FFFFFF;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 1.5em;
+    text-align: center;
+}
+h1 {
+    background-color: #132D46;
+    padding-left: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+nav {
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    background-color: #DEDEDE;
+    font-size: 1.5em;
+    text-align: center;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+}
+
+nav ul { 
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+}
+
+nav a {
+    text-decoration: none;
+    color: #191E29;
+    margin: 0px;
+    padding: 0px 20px 0px 20px;
+}
+
+nav a:link {color: #191E29; }
+nav a:visited {color: #000066; }
+nav a:hover {color: #FFFFFF; }
+
+main {
+    display: block;
+    background-color: #FFFFFF;
+    padding: 25px;
+}
+
+h2 {
+    background-color: #FFFFFF;
+    margin-top: 0px;
+}
+
+#privacy {
+    float: right;
+    max-width: 520px;
+    padding: 10px;
+    margin-right: 10px;
+    height: 520px;
+    background-image: url(camera.jpg);
+    background-repeat: no-repeat;
+}
+
+#privacy, #privacy h2 {
+    background-color: #132D46;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+#security {
+    max-width: 520px;
+    min-width: 520px;
+    padding: 10px;
+    margin-left: 10px;
+    height: 520px;
+    background-image: url(safe.jpg);
+    background-repeat: no-repeat;
+}
+
+#security, #security h2 {
+    background-color: #DEDEDE;
+    color: #132D46;
+    text-align: center;
+}
+
+#security p {
+    color: #FFFFFF;
+}
+
+section a {
+    color: #FFFFFF;
+}
+
+footer {
+    clear: both;
+    text-align: center;
+    background-color: #DEDEDE;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    font-size: 70%;
+}
+
+#me {
+    float: left;
+    padding: 10px;
+}
+
+#cats {
+    float: right;
+    padding: 10px;
+}
+
+#about p {
+    padding: 10px;
+    margin: 10px;
+}
+
+#contact {
+    clear: both;
+}
+
+#contact a {
+    color:#132D46
+}
