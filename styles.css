@@ -1,5 +1,5 @@
 * { 
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
 body { 
@@ -10,8 +10,7 @@ body {
 
 #wrapper { 
     margin: 0 auto;
-    min-width: 1120px; max-width: 1200px; 
-    width: 90%;
+    width: 95%;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
 }
@@ -39,7 +38,6 @@ nav {
     font-size: 1.5em;
     text-align: center;
     padding: 5px;
-    position: sticky;
     top: 0;
 }
 
@@ -50,7 +48,7 @@ nav ul {
 }
 
 nav li {
-    display: inline;
+    
 }
 
 nav a {
@@ -73,13 +71,13 @@ main {
 h2 {
     background-color: #FFFFFF;
     margin-top: 0px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', serif;
 }
 
 #privacy {
-    float: right;
     max-width: 520px;
     padding: 10px;
-    margin-right: 10px;
     height: 520px;
     background-image: url(images/camera.jpg);
     background-repeat: no-repeat;
@@ -93,9 +91,7 @@ h2 {
 
 #security {
     max-width: 520px;
-    min-width: 520px;
     padding: 10px;
-    margin-left: 10px;
     height: 520px;
     background-image: url(images/safe.jpg);
     background-repeat: no-repeat;
@@ -119,13 +115,15 @@ footer {
 }
 
 #me {
-    float: left;
-    padding: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #cats {
-    float: right;
-    padding: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #about p {
@@ -139,4 +137,15 @@ footer {
 
 #contact a {
     color:#132D46
+}
+
+
+header, nav, main, footer, aside {display: block; }
+@media (min-width: 600px) {
+    nav li {
+        display: inline-block;
+    }
+    nav ul{
+        text-align: center;
+    }
 }
