@@ -35,7 +35,7 @@ nav {
     font-weight: bold;
     letter-spacing: 0.05em;
     background-color: #DEDEDE;
-    font-size: 1.5em;
+    font-size: 1.25em;
     text-align: center;
     padding: 5px;
     top: 0;
@@ -48,7 +48,9 @@ nav ul {
 }
 
 nav li {
-    
+    border-bottom: 1px solid #132D46;
+    padding-top: .5em;
+    padding-bottom: .5em;
 }
 
 nav a {
@@ -81,6 +83,7 @@ h2 {
     height: 520px;
     background-image: url(images/camera.jpg);
     background-repeat: no-repeat;
+    margin: auto;
 }
 
 #privacy, #privacy h2, #security, #security h2 {
@@ -95,6 +98,7 @@ h2 {
     height: 520px;
     background-image: url(images/safe.jpg);
     background-repeat: no-repeat;
+    margin: auto;
 }
 
 #security p {
