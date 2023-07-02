@@ -72,6 +72,7 @@ main {
 
 h2 {
     background-color: #FFFFFF;
+    color: #132D46;
     margin-top: 0px;
     text-align: center;
     font-family: Georgia, 'Times New Roman', serif;
@@ -148,6 +149,7 @@ header, nav, main, footer, aside {display: block; }
 @media (min-width: 600px) {
     nav li {
         display: inline-block;
+        border: none;
     }
     nav ul{
         text-align: center;
