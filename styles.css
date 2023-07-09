@@ -5,14 +5,8 @@
 body { 
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #696E79; 
-    color: #191E29; 
-}
-
-#wrapper { 
-    margin: 0 auto;
-    width: 95%;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
+    color: #191E29;
+    margin: 0; 
 }
 
 header {
@@ -23,12 +17,9 @@ header {
 }
 h1 {
     background-color: #132D46;
-    padding-left: 40px;
     padding-top: 20px;
     padding-bottom: 20px;
     margin: 0;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
 }
 
 nav {
@@ -184,6 +175,19 @@ footer {
 
 header, nav, main, footer, aside {display: block; }
 @media (min-width: 600px) {
+    #wrapper { 
+        margin: 0 auto;
+        width: 95%;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+    }
+    body {
+        margin: auto;
+    }
+    h1 {
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+    }
     nav {
         position: sticky;
     }
