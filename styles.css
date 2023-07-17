@@ -212,8 +212,13 @@ input, textarea {
         color: #FFFFFF;
     }
     input[type="submit"] {
-        grid-column: 2 / 3;
-        width: 15%;
+        grid-column: 1 / 2;
+        width: 10em;
+        position: center;
+    }
+    input[type="reset"] {
+        grid-column: 2 / 2;
+        width: 10em;
         position: center;
     }
 }
