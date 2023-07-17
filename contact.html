@@ -33,8 +33,15 @@
                 </section>
                 <section id="contact">
                     <h2>Contact Me</h2>
-                    <p>The best way to contact me is via email. I do my best to respond as best I can, but due to other priorities responses may take around a week.</p>
-                    <a href="mailto:mark.corder88@gmail.com">mark.corder88@gmail.com</a>
+                    <form name="contactMe" id="contactMe" method="post" action=".\demo.php">
+                        <label for="name">Name:</label>
+                        <input type="text" name="name" id="name" placeholder="Insert Name Here">
+                        <label for="email">E-mail Address:</label>
+                        <input type="text" name="email" id="email" placeholder="Inset E-mail Here">
+                        <label for="message">Message:</label>
+                        <textarea name="message" id="message" rows="5" cols="100" placeholder="Insert Message Here"></textarea>
+                        <input type="submit" value="Submit">
+                    </form>
                 </section>
             </main>
             <footer>
