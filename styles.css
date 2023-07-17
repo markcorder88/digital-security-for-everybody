@@ -177,6 +177,46 @@ footer {
     color:#132D46
 }
 
+table {
+    margin: auto;
+    border: 3px solid #191E29;
+}
+
+td, th {
+    border: 1px solid #191E29;
+    padding: .75em;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-spacing: 0;
+}
+th {
+    background-color: #132D46;
+    color: #FFFFFF;
+}
+tr:nth-of-type(even) {
+    background-color: #DEDEDE;
+}
+
+input, textarea {
+    background-color: #DEDEDE;
+}
+
+@supports ( display: grid) {
+    form {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 10em 1fr;
+        grid-gap: 1.25em;
+        gap: 1em;
+        padding: 1em;
+        background-color: #132D46;
+        color: #FFFFFF;
+    }
+    input[type="submit"] {
+        grid-column: 2 / 3;
+        width: 15%;
+        position: center;
+    }
+}
 
 header, nav, main, footer, aside {display: block; }
 @media (min-width: 600px) {
@@ -217,3 +257,4 @@ header, nav, main, footer, aside {display: block; }
         margin: 20px;
     }
 }
+
