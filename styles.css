@@ -224,6 +224,11 @@ input, textarea {
     background-color: #DEDEDE;
 }
 
+video {
+    margin: 0;
+    padding: 10px 0px 0px 0px;
+}
+
 @supports ( display: grid) {
     form {
         display: grid;
