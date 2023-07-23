@@ -30,6 +30,7 @@ nav {
     text-align: center;
     padding: 5px;
     top: 0;
+    position: relative;
 }
 
 nav ul { 
@@ -44,11 +45,34 @@ nav li {
     padding-bottom: .5em;
 }
 
+nav ul ul {
+    position: absolute;
+    padding: 0;
+    text-align: left;
+    display: none;
+}
+
+nav ul ul li {
+    border: 1px solid #132D46;
+    background-color: #DEDEDE;
+    display: block;
+    width: 10em;
+    padding-left: 0;
+    margin-left: 0;
+    font-weight: normal;
+    font-size: .75em;
+}
+
 nav a {
     text-decoration: none;
     color: #191E29;
     margin: 0px;
     padding: 0px 20px 0px 20px;
+}
+
+nav ul ul li a {
+    padding-left: 10px;
+    box-decoration-break: clone;
 }
 
 nav a:link {color: #191E29; }
@@ -247,6 +271,9 @@ header, nav, main, footer, aside {display: block; }
     }
     nav ul{
         text-align: center;
+    }
+    nav li:hover ul {
+        display: block;
     }
     #pages, #resourceitems {
         display: flex;
