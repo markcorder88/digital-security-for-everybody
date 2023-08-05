@@ -5,6 +5,13 @@
         <meta charset="utf-8">
         <link rel="stylesheet" href="styles.css">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.js"></script>
+        <script>
+            $(document).ready(function() {
+                $('form').validate();
+            });
+        </script>
     </head>
     <body>
         <div id="wrapper">
@@ -42,13 +49,17 @@
                 </section>
                 <section id="contact">
                     <h2>Contact Me</h2>
-                    <form name="contactMe" id="contactMe" method="post" action=".\demo.php">
+                    <form name="contactMe" id="contactMe" method="post" action="https://webdevbasics.net/scripts/demo.php">
                         <label for="name">Name:</label>
-                        <input type="text" name="name" id="name" placeholder="Insert Name Here">
+                        <div class="inputValue">
+                            <input type="text" name="name" id="name" placeholder="Insert Name Here" class="required">
+                        </div>
                         <label for="email">E-mail Address:</label>
-                        <input type="email" name="email" id="email" placeholder="Inset E-mail Here">
+                        <div class="inputValue">
+                            <input type="email" name="email" id="email" placeholder="Inset E-mail Here" class="required email">
+                        </div>
                         <label for="messageType">Message Type:</label>
-                        <div>
+                        <div class="inputValue">
                             <input type="radio" name="messageType" id="question" value="Question"> Question
                             <br>
                             <input type="radio" name="messageType" id="comment" value="Comment"> Comment/Feedback
@@ -56,8 +67,10 @@
                             <input type="radio" name="messageType" id="other" value="Other"> Other
                         </div>
                         <label for="message">Message:</label>
-                        <textarea name="message" id="message" rows="5" cols="100" placeholder="Insert Message Here"></textarea>
-                        <input type="submit" value="Submit">
+                        <div class="inputValue">
+                            <textarea name="message" id="message" rows="5" cols="100" placeholder="Insert Message Here" class="required"></textarea>
+                        </div>
+                        <input type="submit" value="Submit" id="submit">
                         <input type="reset" value="Reset">
                     </form>
                 </section>

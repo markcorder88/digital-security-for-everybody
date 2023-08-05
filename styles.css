@@ -193,8 +193,8 @@ footer {
     margin: 10px;
 }
 
-#contact {
-    clear: both;
+#name {
+    width: 300px;
 }
 
 #contact a {
@@ -222,12 +222,20 @@ tr:nth-of-type(even) {
 
 input, textarea {
     background-color: #DEDEDE;
+    }
+
+textarea {
+    width:300px;
 }
 
 video {
     margin: 0;
     padding: 10px 0px 0px 0px;
 }
+
+.error { font-family: Arial, sans-serif;
+    font-style: italic; font-size: .90em;
+    color: #FF0000; margin-left: 1em; }
 
 @supports ( display: grid) {
     form {
